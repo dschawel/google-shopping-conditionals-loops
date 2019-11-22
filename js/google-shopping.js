@@ -24,9 +24,11 @@ console.log(data.items[0])
 
 // 2.) Print the `title` all items with a `backorder` availability
 // in `inventories`.
-// for (let i = 0; i < data.items.product.inventories.length; i++) {
-//     if (data.items[i].product['inventories'][1] == "backorder")
+// Answer for problem 2
+// for (let i = 0; i < data.items.length; i++) {
+//     if (data.items[i].product.inventories[0].availability === "backorder") {
 //     console.log(data.items[i].product.title)
+//     }
 // }
 
 // console.log('\nProblem 2:\n')
@@ -34,8 +36,9 @@ console.log(data.items[0])
 // 3.) Print the `title` all items with more than one image link.
 // Answer to problem 3
 // for (let i = 0; i < data.items.length; i++) {
-//     if (data.items[i].product.images.length > 1)
+//     if (data.items[i].product.images.length > 1) {
 //     console.log(data.items[i].product.title)
+//     }
 // }
 // console.log('\nProblem 3:\n')
 
@@ -51,11 +54,12 @@ console.log(data.items[0])
 // 5.) Print all `items` that have an author name of "eBay" and are
 // brand "Canon".
 // HINT: What is the type of author?
-// for (let i = 0; i < data.items.lenght; i++) {
-//     if (data.items.product.author['name'] == "eBay" && data.items.product.brand === "Canon")
-//     console.log(data.items)
-// }
-// console.log('\nProblem 5:\n')
+for (let i = 0; i < data.items.lenght; i++) {
+    if (data.items[i].product.author.name.includes("eBay") && data.items[i].product.brand == "Canon") {
+    console.log(data.items)
+    }
+}
+console.log('\nProblem 5:\n')
 
 // 6.) Print all the products with their **brand**, **price**,
 // and an **image link**
