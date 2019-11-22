@@ -4,10 +4,10 @@
 let data = require('../products.json')
 
 // This is a print out of all the items in the data
-console.log(data.items)
+// console.log(data.items)
 
 // Next, it's recommended to just look at the first item
-console.log(data.items[0])
+// console.log(data.items[0])
 
 // YOUR CODE BELOW
 // 1.) Go through the `items` and find all results that have `kind` of
@@ -54,9 +54,9 @@ console.log(data.items[0])
 // 5.) Print all `items` that have an author name of "eBay" and are
 // brand "Canon".
 // HINT: What is the type of author?
-for (let i = 0; i < data.items.lenght; i++) {
+for (let i = 0; i < data.items.length; i++) {
     if (data.items[i].product.author.name.includes("eBay") && data.items[i].product.brand == "Canon") {
-    console.log(data.items)
+    console.log(data.items[i])
     }
 }
 console.log('\nProblem 5:\n')
@@ -66,7 +66,7 @@ console.log('\nProblem 5:\n')
 // HINT: You can just use the first (0th) element in the images
 // and inventories arrays.
 // for (let i = 0; i < data.items.length; i++) {
-//     console.log(`${data.items[i].product.brand}` + ' ' + `${data.items[i].product.inventories[2]}` + ' ' + `${data.items[i].product.images[0]}`)
+//     console.log(`${data.items[i].product.brand}` + ' ' + `${data.items[i].product.inventories[0][2]}` + ' ' + `${data.items[i].product.images[0][0]}`)
 // }
 
 // console.log('\nProblem 6:\n')
