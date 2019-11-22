@@ -54,19 +54,19 @@ let data = require('../products.json')
 // 5.) Print all `items` that have an author name of "eBay" and are
 // brand "Canon".
 // HINT: What is the type of author?
-for (let i = 0; i < data.items.length; i++) {
-    if (data.items[i].product.author.name.includes("eBay") && data.items[i].product.brand == "Canon") {
-    console.log(data.items[i])
-    }
-}
-console.log('\nProblem 5:\n')
+// for (let i = 0; i < data.items.length; i++) {
+//     if (data.items[i].product.author.name.includes("eBay") && data.items[i].product.brand == "Canon") {
+//     console.log(data.items[i])
+//     }
+// }
+// console.log('\nProblem 5:\n')
 
 // 6.) Print all the products with their **brand**, **price**,
 // and an **image link**
 // HINT: You can just use the first (0th) element in the images
 // and inventories arrays.
-// for (let i = 0; i < data.items.length; i++) {
-//     console.log(`${data.items[i].product.brand}` + ' ' + `${data.items[i].product.inventories[0][2]}` + ' ' + `${data.items[i].product.images[0][0]}`)
-// }
+for (let i = 0; i < data.items.length; i++) {
+    console.log(`${data.items[i].product.brand}` + ' ' + `${data.items[i].product.inventories[0].price}` + ' ' + `${data.items[i].product.images[0].link}`)
+}
 
-// console.log('\nProblem 6:\n')
+console.log('\nProblem 6:\n')
