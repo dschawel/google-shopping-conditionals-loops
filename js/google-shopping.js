@@ -13,32 +13,56 @@ console.log(data.items[0])
 // 1.) Go through the `items` and find all results that have `kind` of
 // `shopping#product`. Print the count of these results. Where else is
 // this count information stored in the search results?
-
-console.log('\nProblem 1:\n')
+// Answer to problem 1
+// let count = 0
+// data.items.forEach((kind) => {
+//    kind === "shopping#products"
+//    count++
+// })
+// console.log(count)
+// console.log('\nProblem 1:\n')
 
 // 2.) Print the `title` all items with a `backorder` availability
 // in `inventories`.
+// for (let i = 0; i < data.items.product.inventories.length; i++) {
+//     if (data.items[i].product['inventories'][1] == "backorder")
+//     console.log(data.items[i].product.title)
+// }
 
-console.log('\nProblem 2:\n')
+// console.log('\nProblem 2:\n')
 
 // 3.) Print the `title` all items with more than one image link.
-
-console.log('\nProblem 3:\n')
+// Answer to problem 3
+// for (let i = 0; i < data.items.length; i++) {
+//     if (data.items[i].product.images.length > 1)
+//     console.log(data.items[i].product.title)
+// }
+// console.log('\nProblem 3:\n')
 
 // 4.) Print all "Canon" products in the items
 // HINT: careful with case sensitivity!
-
-console.log('\nProblem 4:\n')
+// Answer for problem 4
+// for(let i = 0; i < data.items.length; i++) {
+//     if (data.items[i].product.brand == 'Canon')
+//     console.log(data.items[i].product.title)
+// }
+// console.log('\nProblem 4:\n')
 
 // 5.) Print all `items` that have an author name of "eBay" and are
 // brand "Canon".
 // HINT: What is the type of author?
-
-console.log('\nProblem 5:\n')
+// for (let i = 0; i < data.items.lenght; i++) {
+//     if (data.items.product.author['name'] == "eBay" && data.items.product.brand === "Canon")
+//     console.log(data.items)
+// }
+// console.log('\nProblem 5:\n')
 
 // 6.) Print all the products with their **brand**, **price**,
 // and an **image link**
 // HINT: You can just use the first (0th) element in the images
 // and inventories arrays.
+// for (let i = 0; i < data.items.length; i++) {
+//     console.log(`${data.items[i].product.brand}` + ' ' + `${data.items[i].product.inventories[2]}` + ' ' + `${data.items[i].product.images[0]}`)
+// }
 
-console.log('\nProblem 6:\n')
+// console.log('\nProblem 6:\n')
